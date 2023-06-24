@@ -88,6 +88,4 @@ test:
 #
 production:
   <<: *default
-  database: basic_form_production
-  username: basic_form
-  password: <%= ENV["BASIC_FORM_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
